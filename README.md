@@ -36,6 +36,12 @@ NotchApp ships **ad-hoc signed and not notarized**. The cask runs `xattr -dr com
 brew install --cask --no-quarantine erwinzhang7/notchapp/notchapp
 ```
 
+## License and source lineage
+
+NotchApp is distributed under the [GNU General Public License v3.0](https://github.com/erwinzhang7/NotchApp/blob/main/LICENSE). It includes adapted GPL-3.0 work from [DynamicNotch](https://github.com/jackson-storm/DynamicNotch) and presentation patterns from [Atoll](https://github.com/Ebullioscopic/Atoll); the application repository records the full attribution and bundled-component terms in its [NOTICE](https://github.com/erwinzhang7/NotchApp/blob/main/NOTICE).
+
+This tap distributes cask metadata for the application; the cask links to the application license through its `license` stanza.
+
 ## Issues and source
 
 Source code, release notes, and issue tracker live at [erwinzhang7/NotchApp](https://github.com/erwinzhang7/NotchApp).
