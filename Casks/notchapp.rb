@@ -6,12 +6,13 @@ cask "notchapp" do
   name "NotchApp"
   desc "Notch utility: clipboard, file shelf, media controls, calendar/reminders, and file conversion"
   homepage "https://github.com/erwinzhang7/NotchApp"
+  license "https://github.com/erwinzhang7/NotchApp/blob/main/LICENSE"
 
   depends_on macos: ">= :sequoia"
 
   app "NotchApp.app"
 
-  # Ad-hoc signed, not notarized — clear quarantine so Gatekeeper doesn't
+  # Ad-hoc signed, not notarized - clear quarantine so Gatekeeper doesn't
   # block launch with the "unidentified developer" or "damaged app" prompt.
   postflight do
     system_command "/usr/bin/xattr",
