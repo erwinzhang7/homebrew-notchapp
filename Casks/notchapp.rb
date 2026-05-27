@@ -6,7 +6,6 @@ cask "notchapp" do
   name "NotchApp"
   desc "Notch utility: clipboard, file shelf, media controls, calendar/reminders, and file conversion"
   homepage "https://github.com/erwinzhang7/NotchApp"
-  license "https://github.com/erwinzhang7/NotchApp/blob/main/LICENSE"
 
   depends_on macos: ">= :sequoia"
 
