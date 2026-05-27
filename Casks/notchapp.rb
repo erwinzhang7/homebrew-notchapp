@@ -1,6 +1,6 @@
 cask "notchapp" do
-  version "1.4.0"
-  sha256 "62aebbbac77009d48358d95f4562aebcf561d3304c55e464a57cf11f7987e2ce"
+  version "1.5.0"
+  sha256 "5ca33cd01c220fe5e519efbd862f22f0417fa98cff9da94f132717d7dc167a89"
 
   url "https://github.com/erwinzhang7/NotchApp/releases/download/v#{version}/NotchApp.zip"
   name "NotchApp"
@@ -12,8 +12,9 @@ cask "notchapp" do
 
   app "NotchApp.app"
 
-  # Ad-hoc signed, not notarized - clear quarantine so Gatekeeper doesn't
-  # block launch with the "unidentified developer" or "damaged app" prompt.
+  # Self-signed (local "NotchApp Dev" identity), not notarized - clear
+  # quarantine so Gatekeeper doesn't block launch with the "unidentified
+  # developer" or "damaged app" prompt.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/NotchApp.app"],
