@@ -1,6 +1,6 @@
 cask "notchapp" do
-  version "1.6.1"
-  sha256 "ae0c755578cf002b17225183409f123c6096e9bab8baed6e8cd9d3da911a01c9"
+  version "1.6.2"
+  sha256 "44fd8ecb3566f4cc42accb921adcf5fa8f6dd434933116ee313f78506fef6202"
 
   url "https://github.com/erwinzhang7/NotchApp/releases/download/v#{version}/NotchApp.zip"
   name "NotchApp"
