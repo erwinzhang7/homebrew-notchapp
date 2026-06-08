@@ -7,7 +7,7 @@ cask "notchapp" do
   desc "Notch utility: clipboard, file shelf, media controls, calendar/reminders, and file conversion"
   homepage "https://github.com/erwinzhang7/NotchApp"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "NotchApp.app"
 
